@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciar sites publicados</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --bg-2: #111218;
+      --line: #24262e;
+      --text: #f2f3f5;
+      --muted: #8d919c;
+      --faint: #5c616c;
+      --danger: #e11d48;
+      --danger-2: #be123c;
+      --danger-bg: rgba(225, 29, 72, .12);
+      --ok: #34d399;
+      --ok-bg: rgba(52, 211, 153, .12);
+      --warn: #fbbf24;
+      --test: #a78bfa;
+      --focus: #f2f3f5;
+      --row-h: 56px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100dvh; background: var(--bg); color: var(--text); }
+    body {
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input { font: inherit; color: inherit; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+    .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(11, 12, 15, .92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar {
+      display: flex; align-items: center; gap: 16px;
+      padding: 14px 24px; max-width: 1120px; margin: 0 auto;
+    }
+    .brand { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .brand strong { font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+    .brand span { font-size: 12px; color: var(--muted); }
+    .stats { margin-left: auto; display: flex; gap: 20px; color: var(--muted); font-size: 13px; }
+    .stats b { color: var(--text); font-weight: 600; }
+
+    .toolbar {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      padding: 0 24px 14px; max-width: 1120px; margin: 0 auto;
+    }
+    .search {
+      flex: 1; min-width: 200px; height: 40px; padding: 0 12px 0 36px;
+      background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%238d919c' stroke-width='2' viewBox='0 0 24 24'><circle cx='11' cy='11' r='7'/><path d='M20 20l-3-3'/></svg>");
+      background-repeat: no-repeat; background-position: 12px 50%;
+    }
+    .search::placeholder { color: var(--faint); }
+    .chips { display: flex; gap: 6px; }
+    .chip {
+      height: 32px; padding: 0 12px; border-radius: 999px;
+      background: transparent; border: 1px solid var(--line); color: var(--muted); font-size: 13px;
+    }
+    .chip[aria-pressed="true"] { background: #1a1c24; color: var(--text); border-color: #3a3d48; }
+
+    .token-banner {
+      display: none; align-items: center; gap: 12px; flex-wrap: wrap;
+      max-width: 1120px; margin: 12px auto 0; padding: 12px 14px;
+      border: 1px solid var(--line); border-radius: 10px; background: var(--bg-2);
+    }
+    .token-banner.visible { display: flex; }
+    .token-banner p { flex: 1; min-width: 220px; font-size: 13px; color: var(--muted); }
+    .token-banner input {
+      height: 36px; min-width: 220px; flex: 1; max-width: 360px;
+      padding: 0 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg);
+    }
+    .btn {
+      height: 36px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line);
+      background: #1a1c24; color: var(--text); font-size: 13px; font-weight: 500;
+      display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+    }
+    .btn:hover { background: #22242e; }
+    .btn:disabled { opacity: .45; cursor: not-allowed; }
+    .btn-danger {
+      background: var(--danger); border-color: var(--danger); color: #fff;
+    }
+    .btn-danger:hover { background: var(--danger-2); border-color: var(--danger-2); }
+    .btn-ghost { background: transparent; }
+    .btn-link {
+      background: none; border: 0; color: var(--muted); height: auto; padding: 0;
+      text-decoration: underline; text-underline-offset: 3px; font-size: 13px;
+    }
+
+    main { max-width: 1120px; margin: 0 auto; padding: 8px 24px 120px; }
+    .list-head, .row {
+      display: grid;
+      grid-template-columns: 36px 1fr 110px 150px 72px 40px;
+      gap: 12px; align-items: center;
+    }
+    .list-head {
+      padding: 8px 12px; color: var(--faint); font-size: 11px;
+      font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+    }
+    .row {
+      min-height: var(--row-h); padding: 8px 12px;
+      border-bottom: 1px solid var(--line); cursor: pointer;
+      transition: background .15s ease;
+    }
+    .row:hover { background: #121319; }
+    .row.selected { background: #16141a; }
+    .row.leaving { opacity: 0; transform: translateX(-8px); transition: opacity .2s ease, transform .2s ease; }
+    .row input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--danger); }
+    .name { min-width: 0; }
+    .name strong {
+      display: block; font-size: 14px; font-weight: 600;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .name small {
+      display: block; color: var(--muted); font-size: 12px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .tag {
+      display: inline-flex; align-items: center; height: 22px; padding: 0 8px;
+      border-radius: 999px; font-size: 11px; font-weight: 600; width: fit-content;
+    }
+    .tag-test { color: var(--test); background: rgba(167, 139, 250, .12); }
+    .tag-live { color: var(--ok); background: var(--ok-bg); }
+    .muted { color: var(--muted); font-size: 13px; }
+    .preview {
+      color: var(--muted); display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 8px;
+    }
+    .preview:hover { color: var(--text); background: #1a1c24; }
+
+    .empty { padding: 64px 12px; text-align: center; color: var(--muted); }
+    .toast {
+      position: fixed; top: 16px; right: 16px; z-index: 50;
+      padding: 12px 16px; border-radius: 10px; background: #1a1c24;
+      border: 1px solid var(--line); font-size: 13px; max-width: 360px;
+      transform: translateY(-12px); opacity: 0; pointer-events: none;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .toast.show { transform: none; opacity: 1; }
+    .toast.ok { border-color: #065f46; background: #0b1f18; }
+    .toast.err { border-color: var(--danger-2); background: #1f0b12; }
+
+    footer.actions {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
+      background: rgba(11, 12, 15, .94); backdrop-filter: blur(12px);
+      border-top: 1px solid var(--line);
+    }
+    .actions-inner {
+      max-width: 1120px; margin: 0 auto; padding: 12px 24px;
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    .actions-inner .count { font-size: 13px; color: var(--muted); margin-right: auto; }
+    .actions-inner .count b { color: var(--text); }
+
+    dialog {
+      width: min(520px, calc(100vw - 32px));
+      border: 1px solid var(--line); border-radius: 14px;
+      background: var(--bg-2); color: var(--text); padding: 0;
+    }
+    dialog::backdrop { background: rgba(0, 0, 0, .64); }
+    .modal { padding: 22px 22px 18px; }
+    .modal h2 { font-size: 18px; font-weight: 650; letter-spacing: -.02em; margin-bottom: 8px; }
+    .modal .lead { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+    .warn-box {
+      background: var(--danger-bg); color: #fecdd3; font-size: 13px;
+      padding: 10px 12px; border-radius: 8px; margin-bottom: 14px;
+    }
+    .pick-list {
+      max-height: 240px; overflow: auto; border: 1px solid var(--line);
+      border-radius: 8px; margin-bottom: 16px;
+    }
+    .pick-list li {
+      list-style: none; padding: 8px 12px; font-size: 13px;
+      border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 8px;
+    }
+    .pick-list li:last-child { border-bottom: 0; }
+    .modal-actions { display: flex; justify-content: flex-end; gap: 8px; }
+    .spin {
+      width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent;
+      border-radius: 50%; display: inline-block; animation: spin .6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (max-width: 760px) {
+      .list-head, .row { grid-template-columns: 28px 1fr 72px 36px; }
+      .col-date, .col-size { display: none; }
+      .stats { display: none; }
+      .bar, .toolbar, main, .actions-inner { padding-left: 16px; padding-right: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="brand">
+        <strong>Sites publicados</strong>
+        <span>Excluir faz commit em <span class="mono">main</span> e publica na hora</span>
+      </div>
+      <div class="stats">
+        <span><b id="stat-total">—</b> páginas</span>
+        <span><b id="stat-tests">—</b> testes</span>
+        <span><b id="stat-size">—</b></span>
+        <button class="btn-link" id="forget-token" type="button" hidden>Remover token</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <input class="search" id="search" type="search" placeholder="Buscar por nome ou slug" autocomplete="off">
+      <div class="chips" role="tablist">
+        <button class="chip" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="chip" data-filter="test" aria-pressed="false">Testes</button>
+        <button class="chip" data-filter="live" aria-pressed="false">Publicadas</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="token-banner" id="token-banner">
+    <p>Para excluir, cole um token GitHub com permissão de <b>Contents: Read and write</b> neste repositório. Ele fica só neste navegador.</p>
+    <input id="token-input" type="password" autocomplete="off" placeholder="ghp_… ou github_pat_…">
+    <button class="btn" id="save-token" type="button">Salvar token</button>
+    <a class="btn-link" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Criar token</a>
+  </div>
+
+  <main>
+    <div class="list-head">
+      <label><input type="checkbox" id="check-all" aria-label="Selecionar todas visíveis"></label>
+      <span>Página</span>
+      <span>Tipo</span>
+      <span class="col-date">Atualizada</span>
+      <span class="col-size">Tamanho</span>
+      <span></span>
+    </div>
+    <div id="list"></div>
+    <div class="empty" id="empty" hidden>Nenhuma página encontrada.</div>
+  </main>
+
+  <footer class="actions">
+    <div class="actions-inner">
+      <span class="count"><b id="sel-count">0</b> selecionadas · <span id="sel-size">0 B</span></span>
+      <button class="btn btn-ghost" id="pick-tests" type="button">Marcar testes</button>
+      <button class="btn" id="delete-last-10" type="button">Excluir últimos 10</button>
+      <button class="btn btn-danger" id="delete-selected" type="button" disabled>Excluir selecionadas</button>
+    </div>
+  </footer>
+
+  <dialog id="confirm">
+    <form class="modal" method="dialog">
+      <h2 id="confirm-title">Excluir páginas?</h2>
+      <p class="lead" id="confirm-lead"></p>
+      <div class="warn-box" id="confirm-warn" hidden></div>
+      <ul class="pick-list" id="confirm-list"></ul>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" value="cancel" type="submit">Cancelar</button>
+        <button class="btn btn-danger" id="confirm-go" value="default" type="button">Commitar exclusão em main</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const OWNER = "marciosaraiva7";
+    const REPO = "sites-publicados";
+    const BRANCH = "main";
+    const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+    const PAGES = `https://${OWNER}.github.io/${REPO}`;
+    const TOKEN_KEY = "sites-publicados-gh-token";
+    const PROTECTED = new Set(["admin", ".github", ".git"]);
+
+    const $ = (id) => document.getElementById(id);
+    const state = {
+      sites: [],
+      selected: new Set(),
+      filter: "all",
+      query: "",
+      pending: [],
+      busy: false,
+    };
+
+    function token() { return localStorage.getItem(TOKEN_KEY) || ""; }
+    function isTest(slug) {
+      return /teste|limpo-check|^abc-/i.test(slug);
+    }
+    function pretty(slug) {
+      return slug.replace(/-/g, " ");
+    }
+    function fmtBytes(n) {
+      if (n < 1024) return `${n} B`;
+      if (n < 1024 * 1024) return `${(n / 1024).toFixed(1)} KB`;
+      return `${(n / (1024 * 1024)).toFixed(2)} MB`;
+    }
+    function fmtDate(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return "—";
+      return d.toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
+    }
+    function headers(auth = true) {
+      const h = { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+      if (auth && token()) h.Authorization = `Bearer ${token()}`;
+      return h;
+    }
+    async function gh(path, opts = {}) {
+      const res = await fetch(`${API}${path}`, {
+        ...opts,
+        headers: { ...headers(true), "Content-Type": "application/json", ...(opts.headers || {}) },
+      });
+      if (!res.ok) {
+        let detail = "";
+        try { detail = (await res.json()).message || ""; } catch {}
+        throw new Error(detail || `GitHub ${res.status}`);
+      }
+      if (res.status === 204) return null;
+      return res.json();
+    }
+    function toast(msg, kind = "") {
+      const el = $("toast");
+      el.textContent = msg;
+      el.className = `toast show ${kind}`;
+      clearTimeout(toast._t);
+      toast._t = setTimeout(() => { el.className = "toast"; }, 4200);
+    }
+
+    function visibleSites() {
+      const q = state.query.trim().toLowerCase();
+      return state.sites.filter((s) => {
+        if (state.filter === "test" && !s.test) return false;
+        if (state.filter === "live" && s.test) return false;
+        if (!q) return true;
+        return s.slug.toLowerCase().includes(q) || (s.title || "").toLowerCase().includes(q);
+      });
+    }
+
+    function lastTen() {
+      return [...state.sites].sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 10);
+    }
+
+    function render() {
+      const rows = visibleSites();
+      $("stat-total").textContent = String(state.sites.length);
+      $("stat-tests").textContent = String(state.sites.filter((s) => s.test).length);
+      $("stat-size").textContent = fmtBytes(state.sites.reduce((a, s) => a + (s.bytes || 0), 0));
+      $("empty").hidden = rows.length > 0;
+      $("list").innerHTML = rows.map((s) => {
+        const on = state.selected.has(s.slug);
+        return `<div class="row${on ? " selected" : ""}" data-slug="${s.slug}" role="button" tabindex="0">
+          <input type="checkbox" ${on ? "checked" : ""} aria-label="Selecionar ${s.slug}">
+          <div class="name">
+            <strong>${escapeHtml(s.title || pretty(s.slug))}</strong>
+            <small class="mono">${escapeHtml(s.slug)}</small>
+          </div>
+          <span class="tag ${s.test ? "tag-test" : "tag-live"}">${s.test ? "Teste" : "Publicada"}</span>
+          <span class="muted col-date">${fmtDate(s.date)}</span>
+          <span class="muted col-size">${s.bytes ? fmtBytes(s.bytes) : "—"}</span>
+          <a class="preview" href="${PAGES}/${encodeURIComponent(s.slug)}/" target="_blank" rel="noopener" title="Abrir página" aria-label="Abrir ${s.slug}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          </a>
+        </div>`;
+      }).join("");
+      const selectedSites = state.sites.filter((s) => state.selected.has(s.slug));
+      $("sel-count").textContent = String(selectedSites.length);
+      $("sel-size").textContent = fmtBytes(selectedSites.reduce((a, s) => a + (s.bytes || 0), 0));
+      $("delete-selected").disabled = selectedSites.length === 0 || state.busy || !token();
+      $("delete-last-10").disabled = state.sites.length === 0 || state.busy || !token();
+      $("check-all").checked = rows.length > 0 && rows.every((s) => state.selected.has(s.slug));
+      $("token-banner").classList.toggle("visible", !token());
+      $("forget-token").hidden = !token();
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[c]));
+    }
+
+    async function loadSites() {
+      const [treeRes, commits] = await Promise.all([
+        fetch(`${API}/git/trees/${BRANCH}?recursive=1`, { headers: headers(!!token()) }).then((r) => {
+          if (!r.ok) throw new Error("Não foi possível listar o repositório.");
+          return r.json();
+        }),
+        fetch(`${API}/commits?sha=${BRANCH}&per_page=100`, { headers: headers(!!token()) }).then((r) => r.ok ? r.json() : []),
+      ]);
+      const dates = {};
+      for (const commit of commits) {
+        const msg = commit.commit?.message || "";
+        const when = commit.commit?.committer?.date || commit.commit?.author?.date;
+        const fromMsg = msg.match(/(?:Publish|Update|Remove) site[s]? (.+)/i);
+        if (fromMsg) {
+          fromMsg[1].split(",").map((x) => x.trim()).filter(Boolean).forEach((slug) => {
+            if (!dates[slug]) dates[slug] = when;
+          });
+        }
+      }
+      const bytes = {};
+      const slugs = new Set();
+      for (const item of treeRes.tree || []) {
+        const slug = item.path.split("/")[0];
+        if (!slug || PROTECTED.has(slug) || slug === "index.html" || slug === "README.md") continue;
+        if (item.path.includes("/")) slugs.add(slug);
+        if (item.type === "blob") bytes[slug] = (bytes[slug] || 0) + (item.size || 0);
+      }
+      for (const item of treeRes.tree || []) {
+        if (item.type === "tree" && !item.path.includes("/")) slugs.add(item.path);
+      }
+      state.sites = [...slugs]
+        .filter((slug) => !PROTECTED.has(slug))
+        .map((slug) => ({
+          slug,
+          title: pretty(slug),
+          date: dates[slug] || "",
+          bytes: bytes[slug] || 0,
+          test: isTest(slug),
+        }))
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.slug.localeCompare(b.slug));
+      state.selected = new Set([...state.selected].filter((s) => state.sites.some((x) => x.slug === s)));
+      render();
+    }
+
+    async function deleteSlugs(slugs) {
+      const unique = [...new Set(slugs)].filter((s) => s && !PROTECTED.has(s));
+      if (!unique.length) throw new Error("Nada para excluir.");
+      const ref = await gh(`/git/ref/heads/${BRANCH}`);
+      const commitSha = ref.object.sha;
+      const commit = await gh(`/git/commits/${commitSha}`);
+      const tree = await gh(`/git/trees/${commit.tree.sha}?recursive=1`);
+      const want = new Set(unique);
+      const toDelete = tree.tree.filter((item) => item.type === "blob" && want.has(item.path.split("/")[0]));
+      if (!toDelete.length) throw new Error("Arquivos não encontrados na árvore do Git.");
+      const created = await gh("/git/trees", {
+        method: "POST",
+        body: JSON.stringify({
+          base_tree: commit.tree.sha,
+          tree: toDelete.map((item) => ({ path: item.path, mode: item.mode, type: "blob", sha: null })),
+        }),
+      });
+      const message = unique.length === 1
+        ? `Remove site ${unique[0]}`
+        : `Remove ${unique.length} sites: ${unique.join(", ")}`;
+      const newCommit = await gh("/git/commits", {
+        method: "POST",
+        body: JSON.stringify({ message, tree: created.sha, parents: [commitSha] }),
+      });
+      await gh(`/git/refs/heads/${BRANCH}`, {
+        method: "PATCH",
+        body: JSON.stringify({ sha: newCommit.sha }),
+      });
+      return newCommit.sha;
+    }
+
+    function openConfirm(slugs, title, lead) {
+      state.pending = slugs;
+      const items = slugs.map((slug) => state.sites.find((s) => s.slug === slug)).filter(Boolean);
+      const live = items.filter((s) => !s.test);
+      $("confirm-title").textContent = title;
+      $("confirm-lead").textContent = lead;
+      $("confirm-warn").hidden = live.length === 0;
+      $("confirm-warn").textContent = live.length
+        ? `${live.length} página(s) publicada(s) entram nessa exclusão. O commit em main não tem desfazer fácil.`
+        : "";
+      $("confirm-list").innerHTML = items.map((s) =>
+        `<li><span class="mono">${escapeHtml(s.slug)}</span><span class="tag ${s.test ? "tag-test" : "tag-live"}">${s.test ? "Teste" : "Publicada"}</span></li>`
+      ).join("");
+      $("confirm").showModal();
+    }
+
+    async function runDelete() {
+      if (state.busy) return;
+      const slugs = state.pending;
+      state.busy = true;
+      const btn = $("confirm-go");
+      btn.disabled = true;
+      btn.innerHTML = `<span class="spin"></span> Commitando…`;
+      render();
+      try {
+        const sha = await deleteSlugs(slugs);
+        $("confirm").close();
+        slugs.forEach((slug) => {
+          const row = document.querySelector(`.row[data-slug="${CSS.escape(slug)}"]`);
+          if (row) row.classList.add("leaving");
+        });
+        toast(`Excluídas ${slugs.length} página(s). Commit ${sha.slice(0, 7)} em main.`, "ok");
+        await new Promise((r) => setTimeout(r, 220));
+        slugs.forEach((s) => state.selected.delete(s));
+        await loadSites();
+      } catch (err) {
+        toast(err.message || "Falha ao excluir.", "err");
+      } finally {
+        state.busy = false;
+        btn.disabled = false;
+        btn.textContent = "Commitar exclusão em main";
+        render();
+      }
+    }
+
+    $("list").addEventListener("click", (e) => {
+      const preview = e.target.closest(".preview");
+      if (preview) { e.stopPropagation(); return; }
+      const row = e.target.closest(".row");
+      if (!row) return;
+      const slug = row.dataset.slug;
+      if (state.selected.has(slug)) state.selected.delete(slug);
+      else state.selected.add(slug);
+      render();
+    });
+    $("list").addEventListener("keydown", (e) => {
+      if (e.key !== " " && e.key !== "Enter") return;
+      const row = e.target.closest(".row");
+      if (!row) return;
+      e.preventDefault();
+      row.click();
+    });
+    $("check-all").addEventListener("change", (e) => {
+      const rows = visibleSites();
+      if (e.target.checked) rows.forEach((s) => state.selected.add(s.slug));
+      else rows.forEach((s) => state.selected.delete(s.slug));
+      render();
+    });
+    $("search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        state.filter = chip.dataset.filter;
+        document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
+        render();
+      });
+    });
+    $("pick-tests").addEventListener("click", () => {
+      state.sites.filter((s) => s.test).forEach((s) => state.selected.add(s.slug));
+      state.filter = "test";
+      document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.filter === "test")));
+      render();
+    });
+    $("delete-selected").addEventListener("click", () => {
+      const slugs = [...state.selected];
+      openConfirm(
+        slugs,
+        `Excluir ${slugs.length} página${slugs.length === 1 ? "" : "s"}?`,
+        "A exclusão vira um commit em main e o GitHub Pages atualiza em seguida."
+      );
+    });
+    $("delete-last-10").addEventListener("click", () => {
+      const slugs = lastTen().map((s) => s.slug);
+      const bytes = lastTen().reduce((a, s) => a + (s.bytes || 0), 0);
+      openConfirm(
+        slugs,
+        "Excluir os últimos 10?",
+        `Remove de uma vez as 10 páginas mais recentes (${fmtBytes(bytes)}) e commita em main.`
+      );
+    });
+    $("confirm-go").addEventListener("click", runDelete);
+    $("save-token").addEventListener("click", () => {
+      const value = $("token-input").value.trim();
+      if (!value) return toast("Cole um token para continuar.", "err");
+      localStorage.setItem(TOKEN_KEY, value);
+      $("token-input").value = "";
+      toast("Token salvo neste navegador.", "ok");
+      render();
+      loadSites().catch((err) => toast(err.message, "err"));
+    });
+    $("forget-token").addEventListener("click", () => {
+      localStorage.removeItem(TOKEN_KEY);
+      state.selected.clear();
+      toast("Token removido deste navegador.");
+      render();
+    });
+
+    loadSites().catch((err) => {
+      $("empty").hidden = false;
+      $("empty").textContent = err.message;
+      render();
+    });
+  </script>
+</body>
+</html>
