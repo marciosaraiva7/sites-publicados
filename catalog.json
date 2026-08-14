@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-173-887-raelison-livio-fontes-vieira-da-silva",
+      "nome": "68.173.887 RAELISON LIVIO FONTES VIEIRA DA SILVA",
+      "published_url": "https://six-eight-173-887-raelison-livio-fontes-vieira-da-silva.netlify.app/",
+      "provider": "netlify",
+      "cnpj": "68.173.887/0001-53",
+      "telefone": "(68) 99906-1072",
+      "cidade_uf": "SENADOR GUIOMARD - AC",
+      "segmento": "servicos",
+      "razao_social": "68.173.887 RAELISON LIVIO FONTES VIEIRA DA SILVA",
+      "cep": "69925-000",
+      "logradouro": "10 R CEZAR PORTELA",
+      "numero": "S/N",
+      "complemento": "",
+      "bairro": "TRIUNFO",
+      "whatsapp": "(68) 99906-1072",
+      "email_domain": "gmail.com",
+      "atividade_principal": "4752100 - Comércio varejista especializado de equipamentos de telefonia e comunicação",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-14T17:44:18.048Z",
+      "updated_at": "2026-08-14T17:44:20.747Z"
+    },
+    {
       "slug": "six-seven-985-761-geovanny-dantas-da-rocha",
       "nome": "67.985.761 GEOVANNY DANTAS DA ROCHA",
       "published_url": "https://six-seven-985-761-geovanny-dantas-da.onrender.com/",
