@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-600-688-aline-correa-vital",
+      "nome": "68.600.688 ALINE CORREA VITAL",
+      "published_url": "https://six-eight-600-688-aline-correa-vital.netlify.app/",
+      "provider": "netlify",
+      "cnpj": "68.600.688/0001-84",
+      "telefone": "(11) 3002-1057",
+      "cidade_uf": "DIADEMA - SP",
+      "segmento": "servicos",
+      "razao_social": "68.600.688 ALINE CORREA VITAL",
+      "cep": "09920-220",
+      "logradouro": "Rua Torquato Joaquim Rodrigues",
+      "numero": "115",
+      "complemento": "Casa 2",
+      "bairro": "Centro",
+      "whatsapp": "(11) 3002-1057",
+      "email_domain": "gmail.com",
+      "atividade_principal": "8712300 - Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-17T14:56:55.261Z",
+      "updated_at": "2026-08-17T14:57:03.989Z"
+    },
+    {
       "slug": "adriana-lopes-cavalca",
       "nome": "ADRIANA LOPES CAVALCA",
       "published_url": "https://adriana-lopes-cavalca.netlify.app/",
