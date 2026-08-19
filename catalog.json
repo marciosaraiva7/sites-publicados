@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "27-397-459-danillo-braga-de-moura",
+      "nome": "27.397.459 DANILLO BRAGA DE MOURA",
+      "published_url": "https://two-seven-397-459-danillo-braga-de-moura.onrender.com/",
+      "provider": "render",
+      "cnpj": "27.397.459/0001-27",
+      "telefone": "(64) 99290-9159",
+      "cidade_uf": "ITUMBIARA - GO",
+      "segmento": "servicos",
+      "razao_social": "27.397.459 DANILLO BRAGA DE MOURA",
+      "cep": "75534-402",
+      "logradouro": "AVENIDA LUIZ HUMBERTO COSTA",
+      "numero": "48",
+      "complemento": "",
+      "bairro": "RESIDENCIAL SONHO VERDE",
+      "whatsapp": "(64) 99290-9159",
+      "email_domain": "gmail.com",
+      "atividade_principal": "3101200 - Fabricação de móveis com predominância de madeira",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-19T20:32:59.768Z",
+      "updated_at": "2026-08-19T20:33:04.515Z"
+    },
+    {
       "slug": "63-272-711-bruna-amaral-santos",
       "nome": "63.272.711 BRUNA AMARAL SANTOS",
       "published_url": "https://six-three-272-711-bruna-amaral-santos.onrender.com/",
