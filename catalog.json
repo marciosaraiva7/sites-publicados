@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "67-948-962-ruth-craveiro-vidal",
+      "nome": "67.948.962 RUTH CRAVEIRO VIDAL",
+      "published_url": "https://78a80747.six-seven-948-962-ruth-craveiro-vidal.pages.dev/",
+      "provider": "cloudflare",
+      "cnpj": "67.948.962/0001-48",
+      "telefone": "(68) 99212-5610",
+      "cidade_uf": "RIO BRANCO - AC",
+      "segmento": "servicos",
+      "razao_social": "67.948.962 RUTH CRAVEIRO VIDAL",
+      "cep": "69919-334",
+      "logradouro": "RUA NANAIN",
+      "numero": "111",
+      "complemento": "",
+      "bairro": "LOTEAMENTO JOAFRA",
+      "whatsapp": "",
+      "email_domain": "gmail.com",
+      "atividade_principal": "7420004 - Filmagem de festas e eventos",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-19T21:19:17.870Z",
+      "updated_at": "2026-08-19T21:19:24.929Z"
+    },
+    {
       "slug": "63-272-711-bruna-amaral-santos",
       "nome": "63.272.711 BRUNA AMARAL SANTOS",
       "published_url": "https://six-three-272-711-bruna-amaral-santos.onrender.com/",
