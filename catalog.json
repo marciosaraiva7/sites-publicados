@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "86-618-048-mauricio-jose-dos-santos",
+      "nome": "86.618.048 MAURICIO JOSE DOS SANTOS",
+      "published_url": "https://eight-six-618-048-mauricio-jose-dos.onrender.com/",
+      "provider": "render",
+      "cnpj": "86.618.048/0001-83",
+      "telefone": "(35) 99983-4661",
+      "cidade_uf": "ANDRADAS - MG",
+      "segmento": "servicos",
+      "razao_social": "86.618.048 MAURICIO JOSE DOS SANTOS",
+      "cep": "37844-000",
+      "logradouro": "PRACA ANTONIO BORGES DOS SANTOS",
+      "numero": "310",
+      "complemento": "",
+      "bairro": "CAMPESTRINHO",
+      "whatsapp": "",
+      "email_domain": "hotmail.com",
+      "atividade_principal": "4712100 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "corporativo",
+      "created_at": "2026-08-20T21:13:39.941Z",
+      "updated_at": "2026-08-20T21:13:44.182Z"
+    },
+    {
       "slug": "97-521-034-elisangela-nonato-dos-santos",
       "nome": "97.521.034 ELISANGELA NONATO DOS SANTOS",
       "published_url": "https://nine-seven-521-034-elisangela-nonato-dos.onrender.com/",
