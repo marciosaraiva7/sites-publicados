@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-363-864-elymar-wallyson-ferreira-da-silva",
+      "nome": "68.363.864 ELYMAR WALLYSON FERREIRA DA SILVA",
+      "published_url": "https://six-eight-363-864-elymar-wallyson.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.363.864/0001-01",
+      "telefone": "(96) 99162-2629",
+      "cidade_uf": "MACAPA - AP",
+      "segmento": "servicos",
+      "razao_social": "68.363.864 ELYMAR WALLYSON FERREIRA DA SILVA",
+      "cep": "68905-410",
+      "logradouro": "Passagem Primeira da Turibio",
+      "numero": "226",
+      "complemento": "",
+      "bairro": "Cidade Nova",
+      "whatsapp": "",
+      "email_domain": "gmail.com",
+      "atividade_principal": "9001902 - Produção musical",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "institucional",
+      "created_at": "2026-08-22T20:22:13.353Z",
+      "updated_at": "2026-08-22T20:22:17.443Z"
+    },
+    {
       "slug": "51-018-685-rafaela-godoy-de-almeida",
       "nome": "51.018.685 RAFAELA GODOY DE ALMEIDA",
       "published_url": "https://five-one-018-685-rafaela-godoy-de-almeida.onrender.com/",
