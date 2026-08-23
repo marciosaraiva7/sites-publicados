@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "marcio-vinicius-moreira-saraiva-consultoria-em-tecnologia-da",
+      "nome": "MARCIO VINICIUS MOREIRA SARAIVA CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA",
+      "published_url": "https://marcio-vinicius-moreira-saraiva.onrender.com/",
+      "provider": "render",
+      "cnpj": "52.163.042/0001-47",
+      "telefone": "(41) 99788-0145",
+      "cidade_uf": "NOVA IGUACU - RJ",
+      "segmento": "servicos",
+      "razao_social": "MARCIO VINICIUS MOREIRA SARAIVA CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA",
+      "cep": "26086-250",
+      "logradouro": "RUA ANINA FAENZE",
+      "numero": "156",
+      "complemento": "",
+      "bairro": "AUSTIN",
+      "whatsapp": "(21) 99197-6997",
+      "email_domain": "contabilizei.com.br",
+      "atividade_principal": "6201501 - Desenvolvimento de programas de computador sob encomenda",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "institucional",
+      "created_at": "2026-08-23T15:06:00.074Z",
+      "updated_at": "2026-08-23T15:06:04.509Z"
+    },
+    {
       "slug": "68-363-864-elymar-wallyson-ferreira-da-silva",
       "nome": "68.363.864 ELYMAR WALLYSON FERREIRA DA SILVA",
       "published_url": "https://six-eight-363-864-elymar-wallyson.onrender.com/",
