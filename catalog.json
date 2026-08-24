@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "67-933-645-derbeson-william-silva-severino",
+      "nome": "67.933.645 DERBESON WILLIAM SILVA SEVERINO",
+      "published_url": "https://six-seven-933-645-derbeson-william-silva.onrender.com/",
+      "provider": "render",
+      "cnpj": "67.933.645/0001-58",
+      "telefone": "(68) 98409-3880",
+      "cidade_uf": "RIO BRANCO - AC",
+      "segmento": "servicos",
+      "razao_social": "67.933.645 DERBESON WILLIAM SILVA SEVERINO",
+      "cep": "69905-444",
+      "logradouro": "RUA MANGUEIRA",
+      "numero": "51",
+      "complemento": "",
+      "bairro": "CIDADE NOVA",
+      "whatsapp": "",
+      "email_domain": "gmail.com",
+      "atividade_principal": "1340599 - Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "institucional",
+      "created_at": "2026-08-24T21:27:52.474Z",
+      "updated_at": "2026-08-24T21:28:02.936Z"
+    },
+    {
       "slug": "68-055-733-rafaela-vieira-de-oliveira",
       "nome": "68.055.733 RAFAELA VIEIRA DE OLIVEIRA",
       "published_url": "https://six-eight-055-733-rafaela-vieira-de.onrender.com/",
