@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "53-208-733-fabricio-de-oliveira-do-nascimento",
+      "nome": "53.208.733 FABRICIO DE OLIVEIRA DO NASCIMENTO",
+      "published_url": "https://five-three-208-733-fabricio-de-oliveira.onrender.com/",
+      "provider": "render",
+      "cnpj": "53.208.733/0001-82",
+      "telefone": "(11) 99598-0732",
+      "cidade_uf": "SAO PAULO - SP",
+      "segmento": "servicos",
+      "razao_social": "53.208.733 FABRICIO DE OLIVEIRA DO NASCIMENTO",
+      "cep": "03908-100",
+      "logradouro": "RUA COSTA DE LAVOS",
+      "numero": "100",
+      "complemento": "",
+      "bairro": "JARDIM NOVO CARRAO",
+      "whatsapp": "",
+      "email_domain": "oliveirasolutions.com.br",
+      "atividade_principal": "9511800 - Reparação e manutenção de computadores e de equipamentos periféricos",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-24T14:12:47.614Z",
+      "updated_at": "2026-08-24T14:12:52.496Z"
+    },
+    {
       "slug": "97-554-527-rita-de-cassia-pereira-batalim-rala",
       "nome": "97.554.527 RITA DE CASSIA PEREIRA BATALIM RALA",
       "published_url": "https://nine-seven-554-527-rita-de-cassia.onrender.com/",
