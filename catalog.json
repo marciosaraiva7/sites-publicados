@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "66-852-335-mateus-lucas-da-silva-lima",
+      "nome": "66.852.335 MATEUS LUCAS DA SILVA LIMA",
+      "published_url": "https://six-six-852-335-mateus-lucas-da-silva.onrender.com/",
+      "provider": "render",
+      "cnpj": "66.852.335/0001-46",
+      "telefone": "(62) 99128-7836",
+      "cidade_uf": "FAZENDA NOVA - GO",
+      "segmento": "servicos",
+      "razao_social": "66.852.335 MATEUS LUCAS DA SILVA LIMA",
+      "cep": "76220-000",
+      "logradouro": "AVENIDA AFRANIO FERREIRA",
+      "numero": "S/N",
+      "complemento": "QUADRA 46;LOTE 25",
+      "bairro": "SETOR AEROPORTO",
+      "whatsapp": "",
+      "email_domain": "gmail.com",
+      "atividade_principal": "4399105 - Perfuração e construção de poços de água",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-24T20:52:03.060Z",
+      "updated_at": "2026-08-24T20:52:07.606Z"
+    },
+    {
       "slug": "97-553-415-alencar-ferreira",
       "nome": "97.553.415 ALENCAR FERREIRA",
       "published_url": "https://nine-seven-553-415-alencar-ferreira.onrender.com/",
