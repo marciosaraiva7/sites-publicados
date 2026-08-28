@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-846-985-fernanda-mattoso-monteiro",
+      "nome": "68.846.985 FERNANDA MATTOSO MONTEIRO",
+      "published_url": "https://six-eight-846-985-fernanda-mattoso.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.846.985/0001-04",
+      "telefone": "(14) 0000-0000",
+      "cidade_uf": "MARILIA - SP",
+      "segmento": "alimentacao",
+      "razao_social": "68.846.985 FERNANDA MATTOSO MONTEIRO",
+      "cep": "17507-560",
+      "logradouro": "Rua dos Bagres",
+      "numero": "88",
+      "complemento": "",
+      "bairro": "Jardim Maraja",
+      "whatsapp": "(14) 0000-0000",
+      "email_domain": "gmail.com",
+      "atividade_principal": "5611203 - Lanchonetes, casas de chá, de sucos e similares",
+      "descricao": "Empresa do setor de alimentação, oferecendo produtos e serviços gastronômicos de qualidade.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-28T18:17:45.605Z",
+      "updated_at": "2026-08-28T18:17:56.216Z"
+    },
+    {
       "slug": "68-835-741-elaine-cabral-de-souza",
       "nome": "68.835.741 ELAINE CABRAL DE SOUZA",
       "published_url": "https://six-eight-835-741-elaine-cabral-de-souza.onrender.com/",
