@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "67-923-164-helaine-soares",
+      "nome": "67.923.164 HELAINE SOARES",
+      "published_url": "https://six-seven-923-164-helaine-soares.onrender.com/",
+      "provider": "render",
+      "cnpj": "67.923.164/0001-61",
+      "telefone": "(69) 99252-5634",
+      "cidade_uf": "ESPIGAO D'OESTE - RO",
+      "segmento": "industria",
+      "razao_social": "67.923.164 HELAINE SOARES",
+      "cep": "76974-000",
+      "logradouro": "RUA LAURINDO CHAPEU DE COURO",
+      "numero": "1622",
+      "complemento": "",
+      "bairro": "VISTA ALEGRE",
+      "whatsapp": "(69) 99252-5634",
+      "email_domain": "GMAIL.COM",
+      "atividade_principal": "5912099 - Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente",
+      "descricao": "Empresa do setor industrial, com foco em produção de qualidade e processos otimizados.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-28T19:39:05.687Z",
+      "updated_at": "2026-08-28T19:39:10.880Z"
+    },
+    {
       "slug": "68-844-486-gabriela-manfre-santos",
       "nome": "68.844.486 GABRIELA MANFRE SANTOS",
       "published_url": "https://six-eight-844-486-gabriela-manfre-santos.onrender.com/",
