@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-838-873-flavia-regina-da-silva",
+      "nome": "68.838.873 FLAVIA REGINA DA SILVA",
+      "published_url": "https://six-eight-838-873-flavia-regina-da-silva.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.838.873/0001-01",
+      "telefone": "(11) 99887-0801",
+      "cidade_uf": "SAO PAULO - SP",
+      "segmento": "servicos",
+      "razao_social": "68.838.873 FLAVIA REGINA DA SILVA",
+      "cep": "04853-220",
+      "logradouro": "Rua Vida de Alegria",
+      "numero": "68",
+      "complemento": "",
+      "bairro": "Jardim Noronha",
+      "whatsapp": "(11) 99887-0801",
+      "email_domain": "gmail.com",
+      "atividade_principal": "9602501 - Cabeleireiros, manicure e pedicure",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-28T19:25:37.459Z",
+      "updated_at": "2026-08-28T19:25:42.468Z"
+    },
+    {
       "slug": "68-821-483-elisangela-santos-barbosa",
       "nome": "68.821.483 ELISANGELA SANTOS BARBOSA",
       "published_url": "https://six-eight-821-483-elisangela-santos.onrender.com/",
