@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-844-486-gabriela-manfre-santos",
+      "nome": "68.844.486 GABRIELA MANFRE SANTOS",
+      "published_url": "https://six-eight-844-486-gabriela-manfre-santos.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.844.486/0001-88",
+      "telefone": "(11) 4416-4836",
+      "cidade_uf": "ATIBAIA - SP",
+      "segmento": "servicos",
+      "razao_social": "68.844.486 GABRIELA MANFRE SANTOS",
+      "cep": "12942-120",
+      "logradouro": "Rua Carmela Memolo",
+      "numero": "150",
+      "complemento": "",
+      "bairro": "Vila Thais",
+      "whatsapp": "(11) 4416-4836",
+      "email_domain": "gmail.com",
+      "atividade_principal": "7319002 - Promoção de vendas",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-28T19:30:35.145Z",
+      "updated_at": "2026-08-28T19:30:40.632Z"
+    },
+    {
       "slug": "68-838-873-flavia-regina-da-silva",
       "nome": "68.838.873 FLAVIA REGINA DA SILVA",
       "published_url": "https://six-eight-838-873-flavia-regina-da-silva.onrender.com/",
