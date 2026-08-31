@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-877-457-juliana-ferreira-barbosa",
+      "nome": "68.877.457 JULIANA FERREIRA BARBOSA",
+      "published_url": "https://six-eight-877-457-juliana-ferreira.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.877.457/0001-12",
+      "telefone": "(11) 99578-5659",
+      "cidade_uf": "SAO PAULO - SP",
+      "segmento": "servicos",
+      "razao_social": "68.877.457 JULIANA FERREIRA BARBOSA",
+      "cep": "02451-070",
+      "logradouro": "Rua Mario La Torre",
+      "numero": "104",
+      "complemento": "",
+      "bairro": "Santa Teresinha",
+      "whatsapp": "(11) 99578-5659",
+      "email_domain": "hotmail.com",
+      "atividade_principal": "7723300 - Aluguel de objetos do vestuário, jóias e acessórios",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-08-31T18:54:51.966Z",
+      "updated_at": "2026-08-31T18:54:57.094Z"
+    },
+    {
       "slug": "97-523-166-marcia-helena-alves",
       "nome": "97.523.166 MARCIA HELENA ALVES",
       "published_url": "https://nine-seven-523-166-marcia-helena-alves.onrender.com/",
