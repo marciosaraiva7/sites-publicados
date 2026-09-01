@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-469-158-rogeria-raposo-da-costa",
+      "nome": "68.469.158 ROGERIA RAPOSO DA COSTA",
+      "published_url": "https://six-eight-469-158-rogeria-raposo-da-costa.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.469.158/0001-49",
+      "telefone": "(32) 3321-1678",
+      "cidade_uf": "JUIZ DE FORA - MG",
+      "segmento": "servicos",
+      "razao_social": "68.469.158 ROGERIA RAPOSO DA COSTA",
+      "cep": "36021-620",
+      "logradouro": "RUA VEREADOR SADY CARNOT",
+      "numero": "12",
+      "complemento": "",
+      "bairro": "BOM PASTOR",
+      "whatsapp": "(32) 3321-1678",
+      "email_domain": "GMAIL.COM",
+      "atividade_principal": "9602501 - Cabeleireiros, manicure e pedicure",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-01T21:01:16.310Z",
+      "updated_at": "2026-09-01T21:01:21.540Z"
+    },
+    {
       "slug": "68-783-587-leandra-silva-pereira",
       "nome": "68.783.587 LEANDRA SILVA PEREIRA",
       "published_url": "https://six-eight-783-587-leandra-silva-pereira.onrender.com/",
