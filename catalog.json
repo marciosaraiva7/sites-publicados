@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-697-584-katiane-da-rosa-maciel",
+      "nome": "68.697.584 KATIANE DA ROSA MACIEL",
+      "published_url": "https://six-eight-697-584-katiane-da-rosa-maciel.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.697.584/0001-30",
+      "telefone": "(49) 99829-4660",
+      "cidade_uf": "SAO JOSE DO CERRITO - SC",
+      "segmento": "alimentacao",
+      "razao_social": "68.697.584 KATIANE DA ROSA MACIEL",
+      "cep": "88570-000",
+      "logradouro": "NUCR LOCALIDADE FAZENDA DOS MACHADOS",
+      "numero": "0",
+      "complemento": "",
+      "bairro": "INTERIOR",
+      "whatsapp": "(49) 99829-4660",
+      "email_domain": "gmail.com",
+      "atividade_principal": "5611203 - Lanchonetes, casas de chá, de sucos e similares",
+      "descricao": "Empresa do setor de alimentação, oferecendo produtos e serviços gastronômicos de qualidade.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-01T20:14:07.003Z",
+      "updated_at": "2026-09-01T20:14:13.188Z"
+    },
+    {
       "slug": "68-878-112-ana-laura-do-couto-silva",
       "nome": "68.878.112 ANA LAURA DO COUTO SILVA",
       "published_url": "https://six-eight-878-112-ana-laura-do-couto.onrender.com/",
