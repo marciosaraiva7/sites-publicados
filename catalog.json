@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "lucas-frey",
+      "nome": "LUCAS FREY",
+      "published_url": "https://lucas-frey.onrender.com/",
+      "provider": "render",
+      "cnpj": "98.587.819/0001-00",
+      "telefone": "",
+      "cidade_uf": "VENANCIO AIRES - RS",
+      "segmento": "servicos",
+      "razao_social": "LUCAS FREY",
+      "cep": "95800-000",
+      "logradouro": "RUA HERVAL MIRIM",
+      "numero": "2110",
+      "complemento": "",
+      "bairro": "CENTRO",
+      "whatsapp": "",
+      "email_domain": "",
+      "atividade_principal": "4712100 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-03T21:51:11.884Z",
+      "updated_at": "2026-09-03T21:51:16.078Z"
+    },
+    {
       "slug": "luana-de-sales-fernandes",
       "nome": "LUANA DE SALES FERNANDES",
       "published_url": "https://luana-de-sales-fernandes.onrender.com/",
