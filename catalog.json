@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "ivanor-felix-de-souza",
+      "nome": "IVANOR FELIX DE SOUZA",
+      "published_url": "https://ivanor-felix-de-souza.onrender.com/",
+      "provider": "render",
+      "cnpj": "98.417.678/0001-79",
+      "telefone": "(55) 3411-1286",
+      "cidade_uf": "URUGUAIANA - RS",
+      "segmento": "servicos",
+      "razao_social": "IVANOR FELIX DE SOUZA",
+      "cep": "97535-971",
+      "logradouro": "AVENIDA GABRIEL PACHECO S/N",
+      "numero": "1367",
+      "complemento": "CASA",
+      "bairro": "BARRAGEM SANCHURI",
+      "whatsapp": "(55) 34111-286",
+      "email_domain": "gmail.com",
+      "atividade_principal": "4712100 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-04T16:42:21.839Z",
+      "updated_at": "2026-09-04T16:42:28.819Z"
+    },
+    {
       "slug": "dorcelina-salvaterra-de-modesto",
       "nome": "DORCELINA SALVATERRA DE MODESTO",
       "published_url": "https://dorcelina-salvaterra-de-modesto.onrender.com/",
