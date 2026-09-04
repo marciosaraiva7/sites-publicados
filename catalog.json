@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "dorcelina-salvaterra-de-modesto",
+      "nome": "DORCELINA SALVATERRA DE MODESTO",
+      "published_url": "https://dorcelina-salvaterra-de-modesto.onrender.com/",
+      "provider": "render",
+      "cnpj": "98.104.623/0001-09",
+      "telefone": "(55) 98403-1383",
+      "cidade_uf": "TRES PASSOS - RS",
+      "segmento": "servicos",
+      "razao_social": "DORCELINA SALVATERRA DE MODESTO",
+      "cep": "98600-000",
+      "logradouro": "RUA CATULO CEARENSE",
+      "numero": "167",
+      "complemento": "",
+      "bairro": "SULSERRA",
+      "whatsapp": "(55) 98403-1383",
+      "email_domain": "",
+      "atividade_principal": "4712100 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-04T16:08:36.042Z",
+      "updated_at": "2026-09-04T16:08:40.041Z"
+    },
+    {
       "slug": "68-960-114-fernando-da-silva-lopes",
       "nome": "68.960.114 FERNANDO DA SILVA LOPES",
       "published_url": "https://six-eight-960-114-fernando-da-silva-lopes.onrender.com/",
