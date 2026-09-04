@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "63-941-120-adriana-de-oliveira",
+      "nome": "63.941.120 ADRIANA DE OLIVEIRA",
+      "published_url": "https://six-three-941-120-adriana-de-oliveira.onrender.com/",
+      "provider": "render",
+      "cnpj": "63.941.120/0001-03",
+      "telefone": "(11) 9319-2197",
+      "cidade_uf": "BELO HORIZONTE - MG",
+      "segmento": "servicos",
+      "razao_social": "63.941.120 ADRIANA DE OLIVEIRA",
+      "cep": "31630-290",
+      "logradouro": "RUA RODRIGO FERNANDES SANTOS",
+      "numero": "280",
+      "complemento": "APT 302",
+      "bairro": "SERRA VERDE (VENDA NOVA)",
+      "whatsapp": "(11) 93192-1978",
+      "email_domain": "gmail.com",
+      "atividade_principal": "1091102 - Fabricação de produtos de padaria e confeitaria com predominância de produção própria",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-04T22:51:48.004Z",
+      "updated_at": "2026-09-04T22:51:51.280Z"
+    },
+    {
       "slug": "ivanor-felix-de-souza",
       "nome": "IVANOR FELIX DE SOUZA",
       "published_url": "https://ivanor-felix-de-souza.onrender.com/",
