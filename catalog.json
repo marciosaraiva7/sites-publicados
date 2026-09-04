@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "juliana-vieira-machado-almeida-cordeiro",
+      "nome": "JULIANA VIEIRA MACHADO ALMEIDA CORDEIRO",
+      "published_url": "https://juliana-vieira-machado-almeida-cordeiro.onrender.com/",
+      "provider": "render",
+      "cnpj": "97.525.339/0001-43",
+      "telefone": "(28) 99916-0089",
+      "cidade_uf": "MARATAIZES - ES",
+      "segmento": "servicos",
+      "razao_social": "JULIANA VIEIRA MACHADO ALMEIDA CORDEIRO",
+      "cep": "29345-000",
+      "logradouro": "10A RUA FILEMON TENORIO",
+      "numero": "339",
+      "complemento": "",
+      "bairro": "BARRA DO ITAPEMIRIM",
+      "whatsapp": "(31) 97616-2975",
+      "email_domain": "hotmail.com",
+      "atividade_principal": "4789099 - Comércio varejista de outros produtos não especificados anteriormente",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-04T17:23:57.654Z",
+      "updated_at": "2026-09-04T17:24:01.710Z"
+    },
+    {
       "slug": "68-969-407-juliana-coelho-gama",
       "nome": "JULIANA VIEIRA MACHADO ALMEIDA CORDEIRO",
       "published_url": "https://six-eight-969-407-juliana-coelho-gama.onrender.com/",
