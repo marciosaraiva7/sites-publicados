@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "63-041-005-pedro-henrique-mendes-barbosa",
+      "nome": "63.041.005 PEDRO HENRIQUE MENDES BARBOSA",
+      "published_url": "https://six-three-041-005-pedro-henrique-mendes.onrender.com/",
+      "provider": "render",
+      "cnpj": "63.041.005/0001-82",
+      "telefone": "(54) 9236-7641",
+      "cidade_uf": "MARICA - RJ",
+      "segmento": "servicos",
+      "razao_social": "63.041.005 PEDRO HENRIQUE MENDES BARBOSA",
+      "cep": "24923-001",
+      "logradouro": "RUA PENETRACAO",
+      "numero": "22",
+      "complemento": "CASA",
+      "bairro": "PONTA NEGRA (PONTA NEGRA)",
+      "whatsapp": "(54) 92367-6413",
+      "email_domain": "gmail.com",
+      "atividade_principal": "4322301 - Instalações hidráulicas, sanitárias e de gás",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-04T23:04:14.356Z",
+      "updated_at": "2026-09-04T23:04:17.786Z"
+    },
+    {
       "slug": "63-941-120-adriana-de-oliveira",
       "nome": "63.941.120 ADRIANA DE OLIVEIRA",
       "published_url": "https://six-three-941-120-adriana-de-oliveira.onrender.com/",
