@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-960-114-fernando-da-silva-lopes",
+      "nome": "68.960.114 FERNANDO DA SILVA LOPES",
+      "published_url": "https://six-eight-960-114-fernando-da-silva-lopes.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.960.114/0001-17",
+      "telefone": "(51) 99019-1400",
+      "cidade_uf": "CACHOEIRINHA - RS",
+      "segmento": "servicos",
+      "razao_social": "68.960.114 FERNANDO DA SILVA LOPES",
+      "cep": "94950-582",
+      "logradouro": "Rua Jacarepagua",
+      "numero": "253",
+      "complemento": "",
+      "bairro": "Parque da Matriz",
+      "whatsapp": "",
+      "email_domain": "gmail.com",
+      "atividade_principal": "9602501 - Cabeleireiros, manicure e pedicure",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "corporativo",
+      "created_at": "2026-09-04T03:45:09.006Z",
+      "updated_at": "2026-09-04T03:45:13.317Z"
+    },
+    {
       "slug": "lucas-frey",
       "nome": "LUCAS FREY",
       "published_url": "https://lucas-frey.onrender.com/",
