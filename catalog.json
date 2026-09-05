@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "67-306-663-debora-aparecida-diel-da-silva",
+      "nome": "67.306.663 DEBORA APARECIDA DIEL DA SILVA",
+      "published_url": "https://six-seven-306-663-debora-aparecida-diel.onrender.com/",
+      "provider": "render",
+      "cnpj": "67.306.663/0001-00",
+      "telefone": "(54) 99205-4164",
+      "cidade_uf": "CAXIAS DO SUL - RS",
+      "segmento": "servicos",
+      "razao_social": "67.306.663 DEBORA APARECIDA DIEL DA SILVA",
+      "cep": "95020-412",
+      "logradouro": "RUA BENTO GONCALVES",
+      "numero": "2942",
+      "complemento": "LOJA 03",
+      "bairro": "CENTRO",
+      "whatsapp": "(54) 99205-4164",
+      "email_domain": "hotmail.com",
+      "atividade_principal": "9511800 - Reparação e manutenção de computadores e de equipamentos periféricos",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-05T16:57:01.932Z",
+      "updated_at": "2026-09-05T16:57:05.604Z"
+    },
+    {
       "slug": "cleuza-de-fatima-soares-mantovani",
       "nome": "CLEUZA DE FATIMA SOARES MANTOVANI",
       "published_url": "https://cleuza-de-fatima-soares-mantovani.onrender.com/",
