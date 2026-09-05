@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "cleuza-de-fatima-soares-mantovani",
+      "nome": "CLEUZA DE FATIMA SOARES MANTOVANI",
+      "published_url": "https://cleuza-de-fatima-soares-mantovani.onrender.com/",
+      "provider": "render",
+      "cnpj": "97.549.897/0001-49",
+      "telefone": "(11) 9550-1252",
+      "cidade_uf": "MORRINHOS - GO",
+      "segmento": "servicos",
+      "razao_social": "CLEUZA DE FATIMA SOARES MANTOVANI",
+      "cep": "75650-000",
+      "logradouro": "RUA Rio Grande do Sul",
+      "numero": "182",
+      "complemento": "",
+      "bairro": "Centro",
+      "whatsapp": "(11) 95501-2527",
+      "email_domain": "",
+      "atividade_principal": "1412602 - Confecção, sob medida, de peças do vestuário, exceto roupas íntimas",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-05T11:45:37.903Z",
+      "updated_at": "2026-09-05T11:45:41.379Z"
+    },
+    {
       "slug": "maria-de-fatima-dias-da-silva",
       "nome": "MARIA DE FATIMA DIAS DA SILVA",
       "published_url": "https://maria-de-fatima-dias-da-silva.onrender.com/",
