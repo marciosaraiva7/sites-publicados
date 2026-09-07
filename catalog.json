@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "68-992-134-tiago-passos-costa",
+      "nome": "68.992.134 TIAGO PASSOS COSTA",
+      "published_url": "https://six-eight-992-134-tiago-passos-costa.onrender.com/",
+      "provider": "render",
+      "cnpj": "68.992.134/0001-70",
+      "telefone": "(34) 9760-6557",
+      "cidade_uf": "SANTA BARBARA D'OESTE - SP",
+      "segmento": "servicos",
+      "razao_social": "68.992.134 TIAGO PASSOS COSTA",
+      "cep": "13450-041",
+      "logradouro": "AV DE CILLO",
+      "numero": "1722",
+      "complemento": "",
+      "bairro": "CENTRO",
+      "whatsapp": "(34) 97606-5573",
+      "email_domain": "gmail.com",
+      "atividade_principal": "5611203 - Lanchonetes, casas de chá, de sucos e similares",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-07T03:11:12.894Z",
+      "updated_at": "2026-09-07T03:11:16.854Z"
+    },
+    {
       "slug": "optimize-servicos-de-carga-e-descarga-ltda",
       "nome": "OPTIMIZE SERVICOS DE CARGA E DESCARGA LTDA",
       "published_url": "https://optimize-servicos-de-carga-e-descarga.onrender.com/",
