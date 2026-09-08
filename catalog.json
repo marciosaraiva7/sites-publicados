@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "63-775-822-patricia-altina-rocha-nunes",
+      "nome": "63.775.822 PATRICIA ALTINA ROCHA NUNES",
+      "published_url": "https://six-three-775-822-patricia-altina-rocha.onrender.com/",
+      "provider": "render",
+      "cnpj": "63.775.822/0001-64",
+      "telefone": "(63) 99293-5853",
+      "cidade_uf": "ARAGUAINA - TO",
+      "segmento": "servicos",
+      "razao_social": "63.775.822 PATRICIA ALTINA ROCHA NUNES",
+      "cep": "77825-060",
+      "logradouro": "R TOCANTINS",
+      "numero": "33",
+      "complemento": "QUADRA 04;LOTE 08",
+      "bairro": "VILA COUTO MAGALHAES",
+      "whatsapp": "(63) 99293-5853",
+      "email_domain": "gmail.com",
+      "atividade_principal": "7732201 - Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-08T20:23:05.520Z",
+      "updated_at": "2026-09-08T20:23:09.739Z"
+    },
+    {
       "slug": "92-255-892-roque-edgar-dill",
       "nome": "92.255.892 ROQUE EDGAR DILL",
       "published_url": "https://nine-two-255-892-roque-edgar-dill.onrender.com/",
