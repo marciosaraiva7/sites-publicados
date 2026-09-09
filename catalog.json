@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "63-921-595-livia-carvalho-santiago",
+      "nome": "63.921.595 LIVIA CARVALHO SANTIAGO",
+      "published_url": "https://six-three-921-595-livia-carvalho-santiago.onrender.com/",
+      "provider": "render",
+      "cnpj": "63.921.595/0001-38",
+      "telefone": "(71) 99345-5282",
+      "cidade_uf": "SALVADOR - BA",
+      "segmento": "servicos",
+      "razao_social": "63.921.595 LIVIA CARVALHO SANTIAGO",
+      "cep": "41740-690",
+      "logradouro": "R MANGABEIRA",
+      "numero": "16",
+      "complemento": "CASA GRADE PRETA",
+      "bairro": "PITUACU",
+      "whatsapp": "(71) 99345-5282",
+      "email_domain": "gmail.com",
+      "atividade_principal": "9700500 - Serviços domésticos",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "corporativo",
+      "created_at": "2026-09-09T00:29:53.282Z",
+      "updated_at": "2026-09-09T00:29:57.480Z"
+    },
+    {
       "slug": "63-912-647-reginalda-morais-dos-santos",
       "nome": "63.921.595 LIVIA CARVALHO SANTIAGO",
       "published_url": "https://six-three-912-647-reginalda-morais-dos.onrender.com/",
