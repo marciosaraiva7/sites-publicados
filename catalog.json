@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "97-554-251-renata-holtz",
+      "nome": "97.554.251 RENATA HOLTZ",
+      "published_url": "https://nine-seven-554-251-renata-holtz.onrender.com/",
+      "provider": "render",
+      "cnpj": "97.554.251/0001-50",
+      "telefone": "(11) 99141-8498",
+      "cidade_uf": "SOROCABA - SP",
+      "segmento": "servicos",
+      "razao_social": "97.554.251 RENATA HOLTZ",
+      "cep": "18075-000",
+      "logradouro": "R ATANAZIO SOARES",
+      "numero": "249",
+      "complemento": "",
+      "bairro": "VILA OLIMPIA",
+      "whatsapp": "(11) 99141-8498",
+      "email_domain": "yahoo.com",
+      "atividade_principal": "5620104 - Fornecimento de alimentos preparados preponderantemente para consumo domiciliar",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "corporativo",
+      "created_at": "2026-09-09T01:06:03.477Z",
+      "updated_at": "2026-09-09T01:06:07.688Z"
+    },
+    {
       "slug": "63-921-595-livia-carvalho-santiago",
       "nome": "63.921.595 LIVIA CARVALHO SANTIAGO",
       "published_url": "https://six-three-921-595-livia-carvalho-santiago.onrender.com/",
