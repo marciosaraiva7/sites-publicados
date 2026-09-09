@@ -1,31 +1,6 @@
 {
   "sites": [
     {
-      "slug": "97-553-741-juscyara-beatriz-pio-fernandes",
-      "nome": "97.548.432 EDGARD FREITAS CARDOZO",
-      "published_url": "https://nine-seven-553-741-juscyara-beatriz-pio.onrender.com/",
-      "provider": "render",
-      "cnpj": "97.548.432/0001-73",
-      "telefone": "(19) 99715-2034",
-      "cidade_uf": "CAMPINAS - SP",
-      "segmento": "servicos",
-      "razao_social": "97.548.432 EDGARD FREITAS CARDOZO",
-      "cep": "13013-071",
-      "logradouro": "R ALVARES MACHADO",
-      "numero": "SN",
-      "complemento": "BOX 41",
-      "bairro": "CENTRO",
-      "whatsapp": "(19) 99715-2034",
-      "email_domain": "gmail.com",
-      "atividade_principal": "4752100 - Comércio varejista especializado de equipamentos de telefonia e comunicação",
-      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
-      "horario": "Segunda a Sexta, das 08h às 18h",
-      "fb_verification_tag": "",
-      "template_id": "corporativo",
-      "created_at": "2026-09-09T06:41:44.801Z",
-      "updated_at": "2026-09-09T06:41:48.760Z"
-    },
-    {
       "slug": "97-552-753-linderval-oliveira-de-souza",
       "nome": "97.552.753 LINDERVAL OLIVEIRA DE SOUZA",
       "published_url": "https://nine-seven-552-753-linderval-oliveira-de.onrender.com/",
