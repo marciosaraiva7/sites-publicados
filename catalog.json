@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "tochetto-e-cia-ltda",
+      "nome": "TOCHETTO E CIA LTDA",
+      "published_url": "https://tochetto-e-cia-ltda.onrender.com/",
+      "provider": "render",
+      "cnpj": "98.714.546/0002-90",
+      "telefone": "(45) 9129-9199",
+      "cidade_uf": "VIADUTOS - RS",
+      "segmento": "servicos",
+      "razao_social": "TOCHETTO E CIA LTDA",
+      "cep": "99820-000",
+      "logradouro": "RUA RUI BARBOSA",
+      "numero": "209",
+      "complemento": "",
+      "bairro": "NÃO INFORMADO",
+      "whatsapp": "(45) 91299-1998",
+      "email_domain": "",
+      "atividade_principal": "4753900 - Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "institucional",
+      "created_at": "2026-09-13T03:34:39.012Z",
+      "updated_at": "2026-09-13T03:34:48.457Z"
+    },
+    {
       "slug": "97-548-432-edgard-freitas-cardozo",
       "nome": "97.548.432 EDGARD FREITAS CARDOZO",
       "published_url": "https://nine-seven-548-432-edgard-freitas-cardozo.onrender.com/",
