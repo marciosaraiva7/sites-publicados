@@ -1,6 +1,31 @@
 {
   "sites": [
     {
+      "slug": "69-013-562-magda-alves-cintra",
+      "nome": "69.013.562 MAGDA ALVES CINTRA",
+      "published_url": "https://six-nine-013-562-magda-alves-cintra.onrender.com/",
+      "provider": "render",
+      "cnpj": "69.013.562/0001-76",
+      "telefone": "(66) 99999-0553",
+      "cidade_uf": "JUSCIMEIRA - MT",
+      "segmento": "servicos",
+      "razao_social": "69.013.562 MAGDA ALVES CINTRA",
+      "cep": "78810-000",
+      "logradouro": "RUA ADEMAR DE BARROS",
+      "numero": "263",
+      "complemento": "",
+      "bairro": "BEIRA RIO",
+      "whatsapp": "",
+      "email_domain": "hotmail.com",
+      "atividade_principal": "5620104 - Fornecimento de alimentos preparados preponderantemente para consumo domiciliar",
+      "descricao": "Empresa especializada em prestação de serviços com foco em qualidade, eficiência e atendimento personalizado.",
+      "horario": "Segunda a Sexta, das 08h às 18h",
+      "fb_verification_tag": "",
+      "template_id": "verificado",
+      "created_at": "2026-09-19T16:55:18.266Z",
+      "updated_at": "2026-09-19T16:55:28.389Z"
+    },
+    {
       "slug": "69-062-302-dilza-ester-otramario-miranda",
       "nome": "69.062.302 DILZA ESTER OTRAMARIO MIRANDA",
       "published_url": "https://six-nine-062-302-dilza-ester-otramario.onrender.com/",
